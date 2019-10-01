@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-family: 'Open Sans', helvetica, arial, sans-serif;
+    font-size: 16px;
+  }
+  
+  main {
+    margin: 0 auto;
+    max-width: 1500px;
+    padding: 20px;
+  }
+
+/*Block*/
+
+
+.cards {
+    justify-content: space-around; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.cards section:nth-child(6) {
+    order: -1;
+}
+
+
+.card {
+display: flex;
+flex-direction: column;
+border: 2px;
+border-radius: 5px;
+border-color: #aaa;
+background-color: #fff;
+max-width: 470px;
+max-height: 320px;
+margin-bottom: 10px;
+border-style: solid;
+overflow: auto;
+word-wrap: break-word;
+padding: 15px;
+}
+
+/*Block__Element*/ 
+
+
+.card__h2 {
+  font: 1.5em;
+  line-height: 24px;
+  padding-bottom: 10px;
+}
+
+
+.card__image {
+    flex: 0 0 150px;
+}
+
+
+.card__img {
+  width: 150px;
+  padding-right: 20px;
+}
+
+
+.card__pack {
+  font-size: 1em;
+}
+
+
+.card__paragraphs {
+    line-height: 20px;
+}
+
+
+.card_ul {
+    line-height: 20px;
+    list-style-type: none;
+    font-weight: 600;
+    margin-top: auto;
+  }
+  
+  
+  .card__ul li {
+    display: inline;
+  }
+  
+  /*Block__Element--Modifier*/
+
+.card__paragrpahs--padded {
+    max-width: 65%
+}
+
+.card__pack--fleced {
+    display: flex;
+}
